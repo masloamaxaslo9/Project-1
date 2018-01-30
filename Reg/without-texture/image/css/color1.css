@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document 
+Author Name: Saptarang
+Author URI: http://www.saptarang.org
+Themeforest: http://themeforest.net/user/saptarang?ref=saptarang
+Creation Date: 8 June, 2015
+Description: A default stylesheet for ProConf Event Landing Page Template, Designed & Developed By Saptarang.
+
+------------ TABLE OF CONTENT ------------
+
+- PRIMARY COLOR
+- SECONDARY
+- LIGHT
+- DARK GREY
+
+*/
+/* ======================= */
+/* ========= PRIMARY ======== */
+/* ======================= */
+a, i.prime, ul.list-default li:before, .hex-inner strong, .topics, section:hover .headingIcon i, .navbar-default .navbar-nav > li > a i, .segment:hover .hex.xs i, .segment:hover .time, .subscribe input[type="submit"], .panel-default > .panel-heading h4.active a, .panel-default > .panel-heading h4.active a::before, #schedule .carousel-indicators li.active::before, #pricing .package .fa-check, .pri, div.segmentInfo.BGprime::before {
+	color: #ff5722;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a, #schedule .carousel-indicators li.active, #schedule .carousel-indicators li:hover, .segment:hover img.img-responsive {
+	border-color: #ff5722;
+}
+/* == Background PRIMARY == */
+.btn-primary, .btn-primary:focus, .BGprime, .btn-dark:hover, a.top, #schedule .carousel-indicators li.active span, .eventend .hex-inner::before, #schedule .carousel-indicators li:hover span, #speakers .item ul li:hover a, .social li:hover a i, .hex-inner.prime::before, .navbar-default .navbar-nav > li > .sub-nav li a:hover, .segmentInfo.BGprime {
+	background-color: #ff5722;
+}
+
+::-moz-selection {
+ background-color: #ff5722;
+}
+::selection {
+	background-color: #ff5722;
+}
+.overlayP {
+	background-color: rgba(255, 87, 34, 0.7);
+}
+/* ======================= */
+/* ======= SECONDARY ======= */
+/* ======================= */
+.sec, a:hover, div.segmentInfo.BGsecondary::before, #pricing .package .fa-close {
+	color: #4dd0e1;
+}
+.slide, #speakers .item:hover img {
+	border-color: #4dd0e1;
+}
+/* == Background SECONDARY == */
+.navbar-default, .BGsecondary, .btn-default, .btn-default:focus, #testimonial .carousel-indicators li.active, .owl-theme .owl-controls .owl-page span, .lunch .hex-inner::before, .galimg .link .hex-inner::before, #map .hex-inner::before, .hex-inner.second::before, .segmentInfo.BGsecondary, .day .hex-inner::before {
+	background-color: #4dd0e1;
+}
+.overlayS {
+	background-color: rgba(77, 208, 225, 0.7);
+}
+/* ======================= */
+/* =====  DARK GREY  ===== */
+/* ======================= */
+h1, h2, h3, h4, h5, h6, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > .sub-nav li a, html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, section, article, aside, header, footer, nav, span, .hex-inner span, #speakers .item:hover .meta, .hex i, .nav-tabs > li > a, #pricing .package ul li:before {
+	color: #263238;
+}
+/* == Background Color4 == */
+.BGdark, .btn:hover, .btn-dark, .galleryImg, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li:hover > a, #pricing .package li:hover, #pricing .package li:nth-child(even):hover, #pricing .package.whatuget li:hover {
+	background-color: #263238;
+}
+.overlayD {
+	background-color: rgba(38, 50, 56, 0.8);
+}
+.btn:hover {
+	background-color: #232323 !important;
+}
+/* ======================= */
+/* ====== Dull GREY ======= */
+/* ======================= */
+.headingIcon i, .topics strong, .segment .hex.xs i, .time, #map h5, #map i, #pricing .package .heading .price strong, #speakers .meta, #subscribeForm i.email, #testimonial span {
+	color: #aebabf;
+}
+/* == Background LIGHT == */
+.BGdull, .headingIcon::before, .headingIcon::after, #schedule-carousel .carousel-indicators li span {
+	background-color: #aebabf;
+}
+/* ======================= */
+/* ====== LIGHT ======= */
+/* ======================= */
+/* == Background LIGHT == */
+.BGlight, .panel-default > .panel-heading {
+	background-color: #eceff1;
+}
+#speakers .item img {
+	border-color: #eceff1;
+}
+p {
+	color: #687a83;
+}
