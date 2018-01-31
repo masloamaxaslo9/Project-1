@@ -501,7 +501,7 @@ section:hover .headingIcon i {
 	-moz-border-radius: 9px;
 	-ms-border-radius: 9px;
 	border-radius: 9px;
-	font-size: 1em;
+	font-size: 2em;
 }
 .hex *, .hex *:before {
 	display: block;
@@ -570,12 +570,13 @@ section:hover .headingIcon i {
 	width: 9em;
 	height: 7.65em;
 	margin-top: 1em;
-	margin-bottom: 0;
+	margin-left: 1em
+	margin-bottom: 1em;
 }
 .hex.sm .hex-inner i {
 	display: block;
-	font-size: 3.65em;
-	line-height: 2.15em;
+	font-size: 8em;
+	line-height: 2em;
 	margin: 0 auto;
 	transform: skewX(-30deg) rotate(-30deg);
 	-webkit-transform: skewX(-30deg) rotate(-30deg);
@@ -756,10 +757,13 @@ header .logo a img {
 #register .info {
 	width: 65%;
 	float: left;
+	text-align: center;
+	margin-top: 1em;
 }
 #register .info {
-	width: 58%;
+	width: 100%;
 	float: left;
+	text-align: center;
 }
 #register h3, #register h2, #register p {
 	margin: 0.35em 0;
@@ -965,7 +969,7 @@ h2 {
 	font-size: 2.5em;
 }
 .page-block {
-	padding: 5em 0;
+	padding: 10em 0;
 }
 }
 /* iPads (landscape) ----------- */
@@ -974,7 +978,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 	font-size: 13px;
 }
 .page-block {
-	padding: 5em 0;
+	padding: 10em 0;
 }
 }
 /* iPads (portrait and landscape) ----------- */
@@ -1125,7 +1129,7 @@ header .logo img {
 }
 @media only screen and (max-width: 996px) {
 .page-block {
-	padding: 5em 0;
+	padding: 3em 0;
 }
 .container {
 	width: 90%;
