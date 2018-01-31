@@ -570,8 +570,6 @@ section:hover .headingIcon i {
 	width: 9em;
 	height: 7.65em;
 	margin-top: 1em;
-	margin-left: 1em
-	margin-bottom: 1em;
 }
 .hex.sm .hex-inner i {
 	display: block;
@@ -791,93 +789,8 @@ span.error {
 #register input[type="submit"] {
 	font-family: 'FontAwesome', Lato, Arial, sans-serif;
 }
-#sponsors .owl-item .item {
-	margin: 1em;
-	border: 1px solid #ccc;
-}
-#sponsors .owl-item .item img {
-	max-width: 100%;
-	height: auto;
-}
-/* ================================= */
-/* ------ MAP AND SOCIAL ------ */
-/* ================================= */
-#map {
-	position: relative;
-}
-#map #map_canvas, .venue {
-	height: 50em;
-}
-#map .row div {
-	padding: 0;
-}
-#map #content {
-	display: block;
-	visibility: visible;
-}
-#map .bigIcon {
-	top: -5em;
-}
-#map .mapLogo {
-	width: 200px;
-	height: auto;
-}
-#bodyContent p {
-	margin-bottom: 0.85em;
-}
-.venue {
-	background: url(../img/venue.jpg) no-repeat center center;
-	background-size: cover;
-}
-#map .row .contactInfo {
-	background-color: #fff;
-	top: 21.33%;
-	right: 0;
-	bottom: auto;
-	left: 0;
-	position: absolute;
-	text-align: center;
-	z-index: 99;
-	width: 30em;
-	margin: 0 auto;
-	padding: 0 3em 1.5em;
-	-webkit-box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.3);
-}
-#map .contactInfo .hex-inner i {
-	color: #fff;
-}
-#map .row .contactInfo p, #map .row .contactInfo a {
-	border-top: 1px solid #ececec;
-	margin: 0;
-	padding: 0.65em 0;
-	font-size: 1.15em;
-}
-#map .row .contactInfo a {
-	padding: 0;
-	border: 0;
-}
-#map h5 {
-	margin-bottom: 1em;
-}
-.social, .social li {
-	margin: 0;
-}
-.social li a i {
-	background-color: rgba(255, 255, 255, 0.2);
-	color: rgba(255, 255, 255, 0.7);
-	font-size: 1.55em;
-	width: 2.15em;
-	height: 2.15em;
-	line-height: 2.15em;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	text-align: center;
-	margin: 0;
-}
-.social li a:hover i {
-	color: rgba(255, 255, 255, 0.9);
-}
+
+
 /* ================================= */
 /* ------ COPYRIGHT ------ */
 /* ================================= */
