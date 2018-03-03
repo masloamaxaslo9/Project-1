@@ -1,498 +1,135 @@
 
-/*********-- HEADER --**********/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////// CHAPTER ONE //////////////////////////////////////////////// */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.style-block-one {
-  min-height: 250px;
-  background-color: #ffffff;
-}
-/*********-- TWO BLOCK --**********/
-.style-block-two {
-  min-height: 750px;
-  background-color: #ffffff;
-}
-.style-block-two > div {
-  height: 750px;
-  background-color: #052d3e;
-}
-.style-block-two-block1 {
-  border-top-right-radius: 400px;
-  border-bottom-right-radius: 400px;
-}
-.style-block-two-block2 {
-  border-top-left-radius: 400px;
-  border-bottom-left-radius: 400px;
-}
-/*********-- FOOTER --**********/
-.style-block-three {
-  min-height: 250px;
-  background-color: #ffffff;
-}
+
+/**************************************/
+/*************** NAVBAR ***************/
+/**************************************/
 
 
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,300,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+  Typography.
+ */
+body {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: #2A3744;
+  line-height: 1.4;
+  font-size: 15px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 30px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 17px; }
+
+h6 {
+  font-size: 14px; }
+
+/*
+  General styles.
+ */
+/*===========================*/
+/*========== HEADER==========*/
+/*===========================*/
+
+.header {
+  height: 100px;
+  background-color: white;
+}
+.header-logo {
+  height: 100px;
+}
+.header-menu {
+  height: 100px;
+}
+.header-menu > div > ul {
+text-align: center;
+  line-height: 100px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100px;
+  box-sizing: border-box;
+}
+.header-menu > div > ul > li {
+  display: inline;
+  list-style:none;
+  font-size: 1.6em;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-menu > div > ul > li > a {
+ color: #102A67;
+  padding: 25px 20px;
+  transition: color 0.2s ease-out 0s;
+}
+.header-menu > div > ul > li > a:hover {
+  color: #ff5722;
+  text-decoration: none;
+}
 
 
 
 
 
 
-
-
-/* BLOCK style.css */
-
-@media only screen and (min-width: 1201px) and (max-width: 1400px) {
-  html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 4em;
-  }
-  h2 {
-    font-size: 2.5em;
-  }
-  .page-block {
-    padding: 5em 0;
-  }
-}
-/* iPads (landscape) ----------- */
-@media only screen and (min-width: 990px) and (max-width: 1200px) and (orientation: landscape) {
-  html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {
-    font-size: 13px;
-  }
-  .page-block {
-    padding: 5em 0;
-  }
-}
-/* iPads (portrait and landscape) ----------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  header .logo {
-    position: relative;
-    width: 100%;
-  }
-  .navbar-collapse, .navbar .container-fluid {
-    padding: 0;
-  }
-  .navbar-nav {
-    text-align: center;
-    float: none;
-  }
-  .navbar-nav li {
-    float: none;
-  }
-  .styled {
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .segmentInfo .topics {
-    display: block;
-    border-top: 1px solid #ececec;
-    margin-top: 0.85em;
-    padding-top: 0.85em;
-  }
-  .segmentInfo .time {
-    display: block;
-    border: 1px solid #ececec;
-    border-style: none none solid none;
-    text-align: left;
-    margin-top: 0.35em;
-    padding-bottom: 0.35em;
-  }
-  #subscribe .row > div:first-child {
-    text-align: center;
-  }
-  footer .row > div {
-    text-align: center;
-    margin-bottom: 1.55em;
-  }
-}
-/* iPads (portrait and landscape) ----------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {
-    font-size: 13px;
-  }
-  h1 {
-    font-size: 3.65em;
-  }
-  .styled div span {
-    font-size: 4.15em;
-  }
-  .phone a {
-    font-size: 1.35em;
-    color: #FFF;
-  }
-  header .logo {
-    display: block;
-    text-align: center;
-  }
-  header .logo img {
-    margin: 0 auto;
-  }
-  .carousel-control.left, .carousel-control.right {
-    display: block;
-    opacity: 1;
-  }
-  #slides .absShape {
-    top: 17%;
-  }
-  .hex {
-    width: 9em;
-    height: 7.65em;
-    margin-top: 1em;
-    margin-bottom: 0;
-  }
-  .hex .hex-inner span {
-    font-size: 2.65em;
-    line-height: 2.55em;
-  }
-  .hex-inner strong {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-  .hex.xs .hex-inner i {
-    line-height: 56px;
-  }
-  #event .row div {
-    text-align: center;
-  }
-  #event .hex.sm {
-    float: none;
-    margin: 0;
-  }
-  #event .info, #register .info, #subscribe .info {
-    width: 100%;
-  }
-  .segmentInfo {
-    width: 58%;
-  }
-  .segment .speaker {
-    width: 42%;
-  }
-  .galimg.half {
-    width: 32%;
-  }
-  .galimg.quarter {
-    width: 32%;
-  }
-  .subscribe input[type="submit"] {
-    right: 0;
-  }
-  #register .hex.sm, #subscribe .hex.sm {
-    float: none;
-    margin: 0;
-  }
-  .featureBox, .subscribe {
-    background-size: 150%;
-    background-attachment: scroll;
-    background-position: center center;
-  }
-  #map .row .contactInfo {
-    top: 37%;
-  }
-}
-/* iPads (portrait and landscape) ----------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #slides .absShape {
-    top: 35%;
-  }
-  .styled {
-    padding: 1.35em 0;
-  }
-  #map .row > div {
-    width: 100%;
-  }
-  .subscribe .row > div {
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    float: none;
-  }
-}
-@media only screen and (max-width: 996px) {
-  .page-block {
-    padding: 5em 0;
-  }
-  .container {
-    width: 90%;
-  }
-  #schedule .container {
-    width: 100%;
-  }
-  .carousel-control.left, .carousel-control.right {
-    display: block;
-    opacity: 1;
-  }
-  #pricing .package.whatuget {
-    display: none;
-  }
-  #pricing .package, #pricing .package.one {
-    width: 45%;
-    margin: 2%;
-  }
-  #pricing .package ul li {
-    text-align: right;
-    padding-right: 1.65em;
-  }
-  #pricing .package ul li:before {
-    display: block;
-    top: 0;
-    right: auto;
-    bottom: 0;
-    left: 1.5em;
-    position: absolute;
-    padding: 1em 0;
-    content: attr(data-title);
-    font-size: 1.35em;
-    font-family: 'Montserrat Alternates', Arial, sans-serif;
-  }
-  #pricing .package ul li:hover:before {
-    color: #FFF;
-  }
-  h1 {
-    font-size: 2.85em;
-  }
-  .holder {
-    display: none;
-  }
-  header .logo {
-    display: block;
-    text-align: center;
-  }
-  header .logo img {
-    margin: 0 auto;
-  }
-  .featureBox, .subscribe {
-    background-size: 150%;
-    background-attachment: scroll;
-    background-position: center center;
-  }
-}
-/* Desktops, Large Screen and laptops ----------- */
-@media only screen and (max-width: 767px) {
-  html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {
-    font-size: 0.9rem;
-  }
-  #pricing .package, #pricing .package.one {
-    width: 96%;
-    margin: 1% 2%;
-  }
-  header .logo {
-    position: relative;
-    width: 100%;
-  }
-  header {
-    position: relative;
-    height: auto;
-  }
-  header .row div {
-    padding: 0;
-  }
-  .styled {
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .hex {
-    width: 9em;
-    height: 7.65em;
-    margin-top: 1em;
-    margin-bottom: 0;
-  }
-  .hex .hex-inner span {
-    font-size: 2.65em;
-    line-height: 2.55em;
-  }
-  .hex-inner strong {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-  .hex.xs .hex-inner i {
-    font-size: 26px;
-    line-height: 53px;
-  }
-  #slides {
-    padding: 0 0 3em;
-  }
-  #slides img {
-    margin-bottom: 3em;
-    min-height: 400px;
-  }
-  #slides .absShape {
-    top: 35%;
-  }
-  .bx-wrapper .bx-next {
-    right: 0;
-  }
-  .bx-wrapper .bx-prev {
-    left: 0;
-  }
-  .navbar-nav, header .row {
-    margin: 0;
-  }
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: none;
-  }
-  .navbar-nav li {
-    display: block;
-    padding: 0;
-  }
-  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a {
-    padding: 0.85em 0;
-    border-top: 1px solid #ececec;
-    border-bottom: none;
-  }
-  .navbar-nav li .sub-nav {
-    visibility: visible;
-    position: relative;
-    background-color: transparent;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transform: none;
-    border-top: 1px solid #ececec;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
-  .navbar-nav li .sub-nav li a {
-    text-transform: uppercase;
-  }
-  .navbar-nav li .sub-nav li {
-    text-align: center;
-  }
-  .navbar-nav li .sub-nav li:hover a {
-    background-color: transparent;
-  }
-  .navbar-header {
-    text-align: center;
-  }
-  .galimg.half {
-    width: 48%;
-  }
-  .galimg.quarter {
-    width: 48%;
-  }
-  .segmentInfo, .segment .speaker {
-    width: 100%;
-    margin-bottom: 1.5em;
-  }
-  .segment .round::before {
-    display: none;
-  }
-  .segment .round {
-    position: relative;
-    margin: 1.55em auto 0;
-    display: block;
-    top: 0;
-    right: 0;
-  }
-  .speakerImg img {
-    width: auto;
-  }
-  .segmentInfo .topics {
-    display: block;
-    border-top: 1px solid #ececec;
-    margin-top: 0.85em;
-    padding-top: 0.85em;
-  }
-  .segmentInfo .time {
-    display: block;
-    border: 1px solid #ececec;
-    border-style: none none solid none;
-    text-align: left;
-    margin-top: 0.35em;
-    padding-bottom: 0.35em;
-  }
-  div.segmentInfo::before {
-    content: '\f0d8';
-    left: 50%;
-    top: -0.33em;
-    font-size: 5em;
-    margin-left: -0.33em;
-  }
-  #event .row > div, #register .row > div {
-    margin: 1.35em 0;
-  }
-  #map .row .contactInfo {
-    top: 37%;
-  }
-  footer .row > div {
-    text-align: center;
-    margin-bottom: 1.55em;
-  }
-  .featureBox, .subscribe {
-    background-size: cover;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 570px) and (orientation: portrait) {
-  h1.big {
-    font-size: 6.65em;
-  }
-  h2 {
-    font-size: 2.15em;
-  }
-  #event .row > div, #register .row > div, #register .info {
-    width: 100%;
-    text-align: center;
-  }
-  #event .hex.sm, #register .hex.sm, #subscribe .hex.sm {
-    display: block;
-    margin: 3em 0;
-    float: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #event .info {
-    text-align: center;
-    float: none;
-  }
-  #map .row .contactInfo {
-    position: relative;
-    width: auto;
-  }
-}
-/* iPhone 4 & 5 (portrait & landscape)----------- */
-@media only screen and (min-width: 320px) and (max-width: 570px) {
-  h1 {
-    font-size: 1.35em;
-  }
-  #slides h1 small {
-    font-size: 16px;
-  }
-  .social li {
-    margin: 0.35em 0;
-  }
-  .styled div span {
-    font-size: 2.85em;
-  }
-  .styled div strong {
-    font-size: 12px;
-    letter-spacing: 0;
-  }
-  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    font-size: 1em;
-  }
-}
-@media only screen and (max-width: 996px) and (orientation: landscape) {
-  header {
-    height: auto;
-  }
-  header .logo, .navbar-nav {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-  }
-  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover {
-    padding: 0.5em 1em;
-    line-height: 1.5em;
-  }
-}
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 1.5em;
-  }
-}
